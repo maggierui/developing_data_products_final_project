@@ -1,0 +1,11 @@
+Welcome!
+This is the Course Project: Shiny Application and Reproducible Pitch.
+
+We have provided different options to select the fastest growing technology companies at North America 2017. Drag the sliders to choose to show by ranking range and growth percentage range. Type in the abbreviation of a state or province to show companies that are within that state or province. 
+
+The dataset was retrieved from data.world: https://data.world/jgrosch/deloitte-technology-fast-500-2017-north-america
+
+
+The result of the companies are displayed in the table on the main content. You can sort the table according to the variable you want by clicking the arrows at the top of the table.
+
+Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/gogiraj/Shiny_Coursera_MTCars_Dataset 

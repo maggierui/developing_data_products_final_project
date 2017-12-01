@@ -1,0 +1,50 @@
+Data Products Course Project: Reproducible Presentation Pitch For Shiny App
+========================================================
+author: Rui Hu
+date: 12/01/2017
+autosize: true
+width: 1080
+height:1000
+transition: rotate
+
+Course Project
+========================================================
+
+This presentation is part of the final project for the Coursera Course "Developing Data Products."
+The course final project includes two parts:
+- **Part one**: To develop a Shiny app to display the data based on the users' input. 
+- **Part two**: A reproducible pitch presentation including five slides published in either Slidify or Rstudio presenter, including embedded R codes. 
+
+## Links
+- Shiny app: [link](https://maggiehu.shinyapps.io/fastest_growing_tech_companies_in_north_america_2017/)
+- server.R and ui.R files: 
+
+Fastest Growing Tech Companies 2017 in North America - The Data
+========================================================
+For this assignment, the data was retrieved from [data.world](https://data.world/jgrosch/deloitte-technology-fast-500-2017-north-america).
+The original data was in the format of .xlsx. It was then converted to csv file and read into R.   
+
+```{r}
+data<-read.csv("tech_ranking.csv",header=T)
+summary(data)
+```
+
+Fastest Growing Tech Companies 2017 in North America - The Application
+========================================================
+This web app has two tabs on the top: **Home** and **About**.  
+
+Under **Home** is the main app, including the interactive data input panel on the left side, and the data display on the right side.  
+
+Under **About** is a brief introduction to this app. 
+
+Below is a screenshot of the app:  
+![alt screenshot of the app](appscreen.png)
+
+Fastest Growing Tech Companies 2017 in North America - How to Use
+========================================================
+On the left side of the app, you will be able to adjust your selections by: Rank, Growth (by Percentage), and by State/Province. To avoid empty display, the default state/province has been set to "GA." To change the selection of state/province, you will need to delete the default and type in an abbreviation of a state or province.  
+
+On the right side, you will see the corresponding results based on your selection of ranges of ranks, growth, and state/province. You can also use the arrows next to each column name to sort the results. 
+
+You can also search the results using the "Search" box.
+
